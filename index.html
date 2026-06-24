@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CAHIFIMO</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet"
+href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>CAHIFIMO</h1>
+
+<h3>
+Carbon Activado, Hidroponía,
+Filtración y Monitoreo Electrónico
+</h3>
+
+<p>
+Sistema de Monitoreo Ambiental de Humedales
+San Cristóbal de las Casas, Chiapas
+</p>
+
+</header>
+
+<section id="mapa-section">
+
+<h2>Mapa de Humedales</h2>
+
+<div id="map"></div>
+
+</section>
+
+<section class="dashboard">
+
+<div class="card">
+<h3>Temperatura Ambiente</h3>
+<p id="temp">24°C</p>
+</div>
+
+<div class="card">
+<h3>Humedad Relativa</h3>
+<p id="humedad">65%</p>
+</div>
+
+<div class="card">
+<h3>Temperatura Agua</h3>
+<p id="tempAgua">20°C</p>
+</div>
+
+<div class="card">
+<h3>Sensor Lluvia</h3>
+<p id="lluvia">Sin lluvia</p>
+</div>
+
+<div class="card">
+<h3>Turbidez Entrada</h3>
+<p id="entrada">Agua sucia</p>
+</div>
+
+<div class="card">
+<h3>Turbidez Salida</h3>
+<p id="salida">Agua limpia</p>
+</div>
+
+</section>
+
+<section id="semaforo">
+
+<h2>Estado Ambiental</h2>
+
+<div id="estado" class="verde">
+🟢 NORMAL
+</div>
+
+</section>
+
+<section id="alertas">
+
+<h2>Centro de Alertas</h2>
+
+<div id="mensaje-alerta">
+
+Sin alertas ambientales.
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Históricos Últimas 24 Horas</h2>
+
+<canvas id="grafica"></canvas>
+
+</section>
+
+<section id="quienes">
+
+<h2>¿Quiénes Somos?</h2>
+
+<p>
+
+CAHIFIMO (Carbon Activado, Hidroponía,
+Filtración y Monitoreo Electrónico)
+es una iniciativa desarrollada por estudiantes
+de secundaria del Colegio Vigotski DICET A.C.
+de San Cristóbal de las Casas, Chiapas.
+
+</p>
+
+<p>
+
+Agradecemos el acompañamiento de:
+
+<ul>
+<li>ECOSUR</li>
+<li>Cántaro Azul</li>
+<li>Parque El Encuentro</li>
+<li>Parque Los Humedales</li>
+</ul>
+
+</p>
+
+</section>
+
+<section id="galeria">
+
+<h2>Galería</h2>
+
+<div class="gallery">
+
+<img src="img/humedal1.jpg">
+<img src="img/humedal2.jpg">
+<img src="img/humedal3.jpg">
+
+</div>
+
+</section>
+
+<section id="contacto">
+
+<h2>Contacto</h2>
+
+<p>
+
+Colegio Vigotski DICET A.C.
+
+</p>
+
+<p>
+
+<a href="http://www.dicet.org/" target="_blank">
+
+www.dicet.org
+
+</a>
+
+</p>
+
+<p>
+
+Redes Sociales:
+Próximamente
+
+</p>
+
+</section>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
